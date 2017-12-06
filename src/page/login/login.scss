@@ -1,0 +1,125 @@
+$header-width: 1116px;
+$header-height: 52px;
+
+$logo-width: 111px;
+$logo-height: 28px;
+
+$form-width: 194px;
+$form-height: 30px;
+
+$reg_form-width: 352px;
+$reg_form-height: 30px;
+$reg_form-padding: 8px;
+
+$button-width: 52px;
+$button-height: 30px;
+
+$border-radius: 2px;
+
+body {
+  margin: 999px;
+}
+
+.header {
+  width: 100%;
+  min-width: $header-width;
+  height: $header-height;
+  background-color: #283e4a;
+}
+
+.header-container {
+  width: $header-width;
+  height: $header-height;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  padding: ($header-height - $logo-height)/2;
+  float: left;
+}
+
+.login {
+  float: right;
+  display: inline-flex;
+}
+
+.login-email {
+  width: $form-width;
+  height: $form-height;
+}
+
+.login-password {
+  width: $form-width;
+  height: $form-height;
+}
+
+.submit-button {
+  width: $button-width;
+  height: $button-height;
+}
+
+.link-forgot-password {
+  float: right;
+}
+
+.main {
+  min-width: 1104px;
+  min-height: 469px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-image: url("~@/public/__static__/img/background.jpeg");
+  background-size: cover;
+}
+
+.register {
+  box-sizing: border-box;
+  width: 400px;
+  height: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(237, 240, 243);
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  h2, h3 {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(246, 248, 250);
+  }
+
+  label, input {
+    display: block;
+    margin-left: 24px;
+    margin-right: 24px;
+    box-sizing: border-box;
+  }
+
+  input {
+    width: $reg_form-width;
+    height: $reg_form-height;
+    padding-left: $reg_form-padding;
+    padding-right: $reg_form-padding;
+  }
+}
+
+.agreement {
+  text-align: center;
+  display: block;
+  margin: 0 16px;
+}
+
+.reg-submit {
+  width: $reg_form-width;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #0084bf;
+  color: white;
+}
