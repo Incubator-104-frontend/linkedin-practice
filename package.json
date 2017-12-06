@@ -1,0 +1,24 @@
+{
+  "name": "linkedin-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "espack dev -c qqq",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Incubator-104-frontend/linkedin-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Incubator-104-frontend/linkedin-practice/issues"
+  },
+  "homepage": "https://github.com/Incubator-104-frontend/linkedin-practice#readme",
+  "dependencies": {
+    "104-f2e-es6-pack-toolkit": "git+https://github.com/104corp/104-f2e-es6-pack-toolkit.git"
+  }
+}

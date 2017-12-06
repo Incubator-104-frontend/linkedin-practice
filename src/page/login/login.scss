@@ -1,0 +1,200 @@
+@import "../../scss/genericReset";
+@import "../../scss/genericBoxSizing";
+
+$max-width: 1000px;
+$main-header-pd-hor: 16px;
+$logo-height: 60px;
+$login-form-input-width: 200px;
+
+$reg-form-width: 400px;
+$reg-form-input-width: 352px;
+
+$search-form-input-width: 200px;
+
+@mixin input-length($width, $height: 32px) {
+  width: $width;
+  height: $height;
+}
+
+@mixin transform($percentage: -50%){
+  -webkit-transform: translateY($percentage);
+     -moz-transform: translateY($percentage);
+      -ms-transform: translateY($percentage);
+          transform: translateY($percentage);
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+}
+
+.main-header {
+  background-color: #283e4a;
+  padding-right: $main-header-pd-hor;
+  padding-left: $main-header-pd-hor;
+  min-width: $max-width;
+}
+
+.wrapper {
+  width: $max-width - $main-header-pd-hor * 2;
+  margin-right: auto;
+  margin-left: auto;
+
+  a {
+    color: white;
+  }
+}
+
+.logo {
+  float: left;
+  height: $logo-height;
+
+  img {
+    position: relative;
+    top: 50%;
+    @include transform();
+  }
+}
+
+.login-form {
+  float: right;
+
+  input {
+    @include input-length($login-form-input-width);
+    margin-top: ($logo-height - 32px) / 2;
+    margin-right: 10px;
+    margin-bottom: ($logo-height - 32px) / 2;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: transparent;
+    color: white;
+    width: initial;
+  }
+}
+
+.wrapper:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.main-content {
+  background-image: url("../../../public/__static__/img/people.jpeg");
+  background-size: cover;
+  min-width: $max-width;
+  padding: 32px 16px;
+}
+
+.reg-form {
+  width: $reg-form-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sub-header {
+  background-color: #fff;
+  text-align: center;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  h2 {
+    font-weight: 200;
+    padding-top: 16px;
+  }
+
+  h3 {
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+.reg-error {
+  // margin-top: -30px;
+  background-color: #EDF0F3;
+  height: 32px;
+}
+
+.reg-blank {
+  background-color: #EDF0F3;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  label {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-right: ($reg-form-width - $reg-form-input-width) / 2;
+    margin-left: ($reg-form-width - $reg-form-input-width) / 2
+  }
+
+  label:first-of-type {
+    margin-top: 0;
+  }
+
+  input {
+    @include input-length($reg-form-input-width);
+    display: block;
+    margin: 0 auto;
+  }
+
+  .agreement {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.55);
+    text-align: center;
+    display: block;
+  }
+
+  input[type="submit"] {
+    background-color: #0084bf;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+.main-footer {
+  background-color: #434649;
+  min-width: $max-width;
+  padding-top: 25px;
+  height: 200px;
+}
+
+.search-form {
+  input {
+    @include input-length($search-form-input-width);
+    margin-right: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    background-color: transparent;
+    color: rgba(255,255,255,0.25);
+    width: initial;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
