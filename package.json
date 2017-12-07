@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Incubator-104-frontend/linkedin-practice/issues"
   },
-  "homepage": "https://github.com/Incubator-104-frontend/linkedin-practice#readme"
+  "homepage": "https://github.com/Incubator-104-frontend/linkedin-practice#readme",
+  "devDependencies": {
+    "104-f2e-es6-pack-toolkit": "git+https://github.com/104corp/104-f2e-es6-pack-toolkit.git",
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
 }
