@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<head>
-  <title>LinkedIn: Log In or Sign Up</title>
-  <base href="/">
-<head>
-<body>
-  <div class="header">
-    <div class="header-container">
-      <div class="logo">
-        <img src="__static__/img/logo.png">
+<html>
+  <head>
+    <base href="/">
+    <title>LinkedIn: Log In or Sign Up</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="__static__/img/logo.png">
+        </div>
+        <div class="login">
+          <form>
+            <input class="login-email" type="text" placeholder="Email">
+            <input class="login-password" type="text" placeholder="Password">
+            <input class="submit-button" type="submit" value="Sign in">
+          </form>
+          <a class="link-forgot-password" href="https://www.linkedin.com/uas/request-password-reset?trk=uno-reg-guest-home-forgot-password">Forgot password?</a>
+        </div>
       </div>
-      <div class="login">
-        <form>
-          <input class="login-email" type="text" placeholder="Email">
-          <input class="login-password" type="text" placeholder="Password">
-          <input class="submit-button" type="submit" value="Sign in">
-        </form>
-        <a class="link-forgot-password" href="https://www.linkedin.com/uas/request-password-reset?trk=uno-reg-guest-home-forgot-password">Forgot password?</a>
+    </div>
+    <div class="main">
+      <form class="register">
+        <h2 class="title">Be great at what you do</h2>
+        <h3 class="subtitle">Get started - it's free.</h3>
+        <label>First name</label>
+        <input class="reg-first_name" type="text">
+        <label>Last name</label>
+        <input class="reg-last_name" type="text">
+        <label>Email</label>
+        <input class="reg-email" type="text">
+        <label>Password (6 or more characters)</label>
+        <input class="reg-password" type="text">
+        <span class="agreement">By clicking Join now, you agree to the LinkedIn <a href="https://www.linkedin.com/legal/user-agreement">User Agreement</a>, <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>, and <a href="https://www.linkedin.com/legal/cookie-policy">Cookie Policy</a></span>
+        <input class="reg-submit" type="submit" value="Join now">
+      </form>
+    </div>
+    <div class="bottom">
+      <div class="find">
+      </div>
+      <div class="sitemap">
+      <div>
+      <div class="footer">
       </div>
     </div>
-  </div>
-  <div class="main">
-    <form class="register">
-      <h2 class="title">Be great at what you do</h2>
-      <h3 class="subtitle">Get started - it's free.</h3>
-      <label>First name</label>
-      <input class="reg-first_name" type="text">
-      <label>Last name</label>
-      <input class="reg-last_name" type="text">
-      <label>Email</label>
-      <input class="reg-email" type="text">
-      <label>Password (6 or more characters)</label>
-      <input class="reg-password" type="text">
-      <span class="agreement">By clicking Join now, you agree to the LinkedIn <a href="https://www.linkedin.com/legal/user-agreement">User Agreement</a>, <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>, and <a href="https://www.linkedin.com/legal/cookie-policy">Cookie Policy</a></span>
-      <input class="reg-submit" type="submit" value="Join now">
-    </form>
-  </div>
-  <div class="bottom">
-    <div class="find">
-    </div>
-    <div class="sitemap">
-    <div>
-    <div class="footer">
-    </div>
-  </div>
-</body>
+  </body>
+</html>
