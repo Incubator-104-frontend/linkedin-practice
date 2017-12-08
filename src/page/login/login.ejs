@@ -3,52 +3,140 @@
   <head>
     <title>linkedin</title>
     <base href="/">
-    <!-- <link rel="stylesheet" type="text/css" href="./login.css"> -->
+    <script src="/__static__/js/vendor/jquery-3.2.1.min.js"></script>
   </head>
   <body>
-    <header class="main-header">
-      <div class="wrapper">
-        <div class="logo">
-          <img src="__static__/img/logo.png">
+    <div class="global-wrapper">
+      <header class="main-header">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="/__static__/img/logo.png">
+          </div>
+          <form class="login-form">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="密碼">
+            <input type="submit" value="登入">
+            <a href="#">忘記密碼？</a>
+          </form>
         </div>
-        <form class="login-form">
-          <input type="text" placeholder="Email">
-          <input type="password" placeholder="密碼">
-          <input type="submit" value="登入">
-          <a href="#">忘記密碼？</a>
+      </header>
+      <div class="main-content">
+        <form class="reg-form">
+          <div class="sub-header">
+            <h2>展現個人優勢！</h2>
+            <h3>免費註冊，馬上開始！</h3>
+          </div>
+          <div class="reg-error">
+            <div class="emsg-container">
+              <p class="message">Something error</p>
+            </div>
+          </div>
+          <div class="reg-blank">
+            <label for="lastname">姓</label>
+            <input type="text">
+            <label for="firstname">名</label>
+            <input type="text">
+            <label for="email">Email</label>
+            <input type="text">
+            <label for="password">密碼 (6 個字元以上)</label>
+            <input type="password">
+            <span class="agreement">
+              按下「立即加入」即代表您同意 LinkedIn <a href="#">用戶協議</a>、<a href="#">隱私權政策</a>和 <a href="#">Cookie 政策</a>。
+            </span>
+            <input type="submit" value="立即加入">
+          </div>
         </form>
       </div>
-    </header>
-    <div class="main-content">
-      <form class="reg-form">
-        <div class="sub-header">
-          <h2>展現個人優勢！</h2>
-          <h3>免費註冊，馬上開始！</h3>
+      <footer class="main-footer">
+        <form class="search-form">
+          <h3 class="title">尋找同事</h3>
+          <input type="text" placeholder="姓">
+          <input type="text" placeholder="名">
+          <input type="submit" value="搜尋">
+        </form>
+        <div class="search-directory">
+          <div class="center">
+            <h3 class="title">LinkedIn 會員列表： </h3>
+            <ul class="list-inline">
+              <li><a href="#">A</a></li><li><a href="#">B</a></li><li><a href="#">C</a></li><li>
+              <a href="#">D</a></li><li><a href="#">E</a></li><li><a href="#">F</a></li><li>
+              <a href="#">G</a></li><li><a href="#">H</a></li><li><a href="#">I</a></li><li>
+              <a href="#">J</a></li><li><a href="#">K</a></li><li><a href="#">L</a></li><li>
+              <a href="#">M</a></li><li><a href="#">N</a></li><li><a href="#">P</a></li><li>
+              <a href="#">Q</a></li><li><a href="#">R</a></li><li><a href="#">S</a></li><li>
+              <a href="#">T</a></li><li><a href="#">U</a></li><li><a href="#">V</a></li><li>
+              <a href="#">W</a></li><li><a href="#">X</a></li><li><a href="#">Y</a></li><li>
+              <a href="#">Z</a></li><li><a href="#">更多</a></li><li class="country-search">
+              <a href="#">按國家搜尋</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- <div class="reg-error"></div> -->
-        <div class="reg-blank">
-          <label for="lastname">姓</label>
-          <input type="text">
-          <label for="firstname">名</label>
-          <input type="text">
-          <label for="email">Email</label>
-          <input type="text">
-          <label for="password">密碼 (6 個字元以上)</label>
-          <input type="password">
-          <span class="agreement">
-            按下「立即加入」即代表您同意 LinkedIn <a href="#">用戶協議</a>、<a href="#">隱私權政策</a>和 <a href="#">Cookie 政策</a>。
-          </span>
-          <input type="submit" value="立即加入">
+        <div class="link-container">
+          <div class="link-left">
+            <div class="link-general">
+              <h3 class="title">一般</h3>
+              <ul class="list-bare">
+                <li><a href="#">註冊</a></li><li><a href="#">說明中心</a></li><li>
+                <a href="#">關於</a></li><li><a href="#">新聞媒體</a></li><li>
+                <a href="#">部落格</a></li><li><a href="#">徵才專區</a></li><li>
+                <a href="#">開發人員</a></li>
+              </ul>
+            </div>
+            <div class="link-browse">
+              <h3 class="title">前往 Linkedin</h3>
+              <ul class="list-bare">
+                <li><a href="#">大人物</a></li><li><a href="#">職缺</a></li><li>
+                <a href="#">行動版</a></li><li><a href="#">Learning</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="link-right">
+            <div class="link-business">
+              <h3 class="title">商務解決方案</h3>
+              <ul class="list-bare">
+                <li><a href="#">徵才</a></li><li><a href="#">行銷</a></li><li>
+                <a href="#">業務</a></li><li><a href="#">Learning</a></li>
+              </ul>
+            </div>
+            <div class="link-directory">
+              <h3 class="title">目錄</h3>
+              <ul class="list-bare">
+                <li><a href="#">會員</a></li><li><a href="#">職缺</a></li><li>
+                <a href="#">Pulse</a></li><li><a href="#">主題</a></li><li>
+                <a href="#">公司</a></li><li><a href="#">薪資</a></li><li>
+                <a href="#">大學</a></li><li><a href="#">職稱</a></li><li>
+                <a href="#">會員</a></li><li><a href="#">熱門職缺</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </form>
+        <div class="footer-bar">
+          <div class="copyright">
+            <div class="center">
+              <img src="__static__/img/logo-ft.png">
+              <span>© 2017</span>
+            </div>
+          </div>
+          <ul class="list-inline">
+            <li><a href="#">用戶協議</a></li>
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">社群指南</a></li>
+            <li><a href="#">Cookie 政策</a></li>
+            <li><a href="#">著作權政策</a></li>
+            <li><a href="#">訪客控管</a></li>
+            <li class="lang-selector-container">
+              <a>語言能力</a>
+              <form>
+                <ul class="list-bare lang-selector">
+                  <li><button>簡體中文</button></li>
+                  <li><button>正體中文</button></li>
+                  <li><button>English</button></li>
+                </ul>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-    <footer class="main-footer">
-      <form class="search-form">
-        <h3 class="title">尋找同事</h3>
-        <input type="text" placeholder="姓">
-        <input type="text" placeholder="名">
-        <input type="submit" value="搜尋">
-      </form>
-    </footer>
   </body>
 </html>
