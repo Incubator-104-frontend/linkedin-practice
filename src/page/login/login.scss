@@ -1,3 +1,6 @@
+@import "../../scss/genericReset";
+@import "../../scss/genericBoxSizing";
+
 $header-width: 1116px;
 $header-height: 52px;
 
@@ -16,8 +19,21 @@ $button-height: 30px;
 
 $border-radius: 2px;
 
-body {
-  margin: 999px;
+$min-width: 1104px;
+
+@mixin link-decoration($color) {
+  font-size: 13px;
+  text-decoration-line: none;
+  color: $color;
+}
+
+html {
+  min-width: $min-width;
+}
+
+.global {
+  height: 100vh;
+  background-color: black;
 }
 
 .header {
@@ -64,8 +80,9 @@ body {
 }
 
 .main {
-  min-width: 1104px;
-  min-height: 469px;
+  height: calc(100% - 303px - 52px);
+  min-width: $min-width;
+  min-height: 517px;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 12px;
@@ -110,9 +127,18 @@ body {
 }
 
 .agreement {
+  width: 368px;
+  height: 32px;
+  margin: 8px 16px;
   text-align: center;
+  font-size: 13px;
   display: block;
   margin: 0 16px;
+  color: rgba(0, 0, 0, 0.55);
+
+  a {
+    @include link-decoration(rgba(0, 0, 0, 0.55));
+  }
 }
 
 .reg-submit {
@@ -122,4 +148,94 @@ body {
   padding-right: 16px;
   background-color: #0084bf;
   color: white;
+}
+
+.bottom {
+  padding-top: 25px;
+  background-color: #434649;
+  width: 100%;
+  // position: absolute;
+  // bottom: 0;
+}
+
+.find {
+  display: block;
+
+  h3 {
+    color: white;
+    float: left;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 210px;
+    height: 30px;
+  }
+}
+
+.find-colleague-form {
+  width: 683.953px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+.submit-button {
+  width: 53.875px !important;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+}
+
+.dictionary {
+  font-size: 13px;
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 772.048px;
+  height: 48px;
+  margin: 0 auto;
+
+  h3 {
+    color: white;
+    float: left;
+  }
+
+  li {
+    display: inline-block;
+    a {
+      @include link-decoration(#0084bf);
+    }
+  }
+}
+
+.sitemap {
+  width: 1128px;
+  height: 162px;
+  margin: 0 auto;
+  min-width: $min-width;
+
+  a {
+    @include link-decoration(rgba(255,255,255,0.85));
+  }
+
+  li {
+    display: inline-block;
+    border-right: 1px solid rgba(255,255,255,0.55);
+  }
+
+  .links {
+    width: 50%;
+    height: 50%;
+    float: left;
+  }
+}
+
+.footer {
+  li {
+    display: inline-block;
+  }
+}
+
+#browse-by-country {
+  @include link-decoration(white);
 }
