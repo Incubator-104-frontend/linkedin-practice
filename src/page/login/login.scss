@@ -55,6 +55,10 @@ input[type="submit"] {
   a {
     color: white;
   }
+  
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .logo {
@@ -183,6 +187,14 @@ input[type="submit"] {
     color: rgba(0,0,0,0.55);
     text-align: center;
     display: block;
+
+    a {
+      color: rgba(0,0,0,0.55);
+    }
+    
+    a:hover {
+      color: #0073b1;
+    }
   }
 
   input[type="submit"] {
@@ -247,6 +259,10 @@ input[type="submit"] {
       display: block;
       font-weight: 600;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   .country-search {
@@ -287,6 +303,10 @@ input[type="submit"] {
       display: block;
       font-weight: 600;
       padding: 0 4px;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   }
 
@@ -341,6 +361,10 @@ input[type="submit"] {
         color: rgba(255,255,255,0.85);
         display: inline-block;
         font-size: 13px;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     }
   }
