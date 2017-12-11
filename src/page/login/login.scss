@@ -1,5 +1,6 @@
 @import "../../scss/genericReset";
 @import "../../scss/genericBoxSizing";
+@import "../../scss/_toolsTransform";
 
 $min-width: 1000px;
 $main-header-pd-hor: 16px;
@@ -18,13 +19,6 @@ $logo-ft-height: 40px;
 @mixin input-length($width, $height: 32px) {
   width: $width;
   height: $height;
-}
-
-@mixin transformY($percentage: -50%){
-  -webkit-transform: translateY($percentage);
-     -moz-transform: translateY($percentage);
-      -ms-transform: translateY($percentage);
-          transform: translateY($percentage);
 }
 
 a {
