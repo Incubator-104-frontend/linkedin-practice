@@ -191,7 +191,7 @@ input[type="submit"] {
     a {
       color: rgba(0,0,0,0.55);
     }
-    
+
     a:hover {
       color: #0073b1;
     }
@@ -263,6 +263,10 @@ input[type="submit"] {
     a:hover {
       text-decoration: underline;
     }
+
+    &:last-of-type a{
+      color: rgba(255,255,255,0.85);
+    } 
   }
 
   .country-search {
@@ -289,6 +293,7 @@ input[type="submit"] {
   .title {
     display: block;
     margin-bottom: 8px;
+    margin-left: 4px;
   }
 
   li {
@@ -307,6 +312,10 @@ input[type="submit"] {
 
     a:hover {
       text-decoration: underline;
+    }
+
+    a:visited {
+      color: #827be9;
     }
   }
 
