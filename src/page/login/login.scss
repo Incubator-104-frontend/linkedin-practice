@@ -7,15 +7,12 @@ $header-height: 52px;
 $logo-width: 111px;
 $logo-height: 28px;
 
-$form-width: 194px;
-$form-height: 30px;
+$form-width: 226px;
+$form-height: 32px;
 
 $reg_form-width: 352px;
 $reg_form-height: 30px;
 $reg_form-padding: 8px;
-
-$button-width: 52px;
-$button-height: 30px;
 
 $border-radius: 2px;
 
@@ -25,6 +22,16 @@ $min-width: 1104px;
   font-size: 13px;
   text-decoration-line: none;
   color: $color;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+@mixin vertical-center() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 html {
@@ -63,28 +70,48 @@ html {
 .login-email {
   width: $form-width;
   height: $form-height;
+  padding: 0 10px;
+  margin: 10px 8px 10px 0;
+  font-size: 13px;
+  border: 1px solid #006097;
 }
 
 .login-password {
   width: $form-width;
   height: $form-height;
+  padding: 0 10px;
+  margin: 10px 8px 10px 0;
+  font-size: 13px;
+  border: 1px solid #006097;
 }
 
-.submit-button {
-  width: $button-width;
-  height: $button-height;
+.login-submit-button {
+  width: 94px;
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 10px;
+  font-size: 17px;
+  color: white;
+  background-color: transparent;
+  border-radius: $border-radius;
+  border: 1px solid white;
 }
 
 .link-forgot-password {
-  float: right;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 13px;
+
+  @include link-decoration(#cdcfd2);
+  &:visited {
+    color: #827be9;
+  }
 }
 
 .main {
-  height: calc(100% - 303px - 52px);
+  height: calc(100% - 350px - 52px);
   min-width: $min-width;
   min-height: 517px;
-  padding-top: 24px;
-  padding-bottom: 24px;
   padding-left: 12px;
   padding-right: 12px;
   background-image: url("~@/public/__static__/img/background.jpeg");
@@ -94,7 +121,8 @@ html {
 .register {
   box-sizing: border-box;
   width: 400px;
-  height: 445px;
+  height: 469px;
+  padding-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(237, 240, 243);
@@ -102,6 +130,9 @@ html {
   border-top-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 
   h2, h3 {
     border-top-left-radius: $border-radius;
@@ -109,6 +140,16 @@ html {
     margin: 0;
     text-align: center;
     background-color: rgb(246, 248, 250);
+  }
+
+  .title {
+    padding: 16px 32px 8px 32px;
+    font-size: 26px;
+  }
+
+  .subtitle {
+    padding: 0 8px 16px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
 
   label, input {
@@ -124,6 +165,16 @@ html {
     padding-left: $reg_form-padding;
     padding-right: $reg_form-padding;
   }
+
+  .reg-first_name {
+    padding-top: 24px;
+    padding-bottom: 4px;
+  }
+
+  .reg-label {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
 }
 
 .agreement {
@@ -135,6 +186,7 @@ html {
   display: block;
   margin: 0 16px;
   color: rgba(0, 0, 0, 0.55);
+  margin: 16px 16px 8px 16px;
 
   a {
     @include link-decoration(rgba(0, 0, 0, 0.55));
@@ -142,20 +194,20 @@ html {
 }
 
 .reg-submit {
+  display: block;
   width: $reg_form-width;
   height: 32px;
   padding-left: 16px;
   padding-right: 16px;
   background-color: #0084bf;
-  color: white;
+  color: rgba(255,255,255,0.85);
+  font-size: 17px;
 }
 
 .bottom {
   padding-top: 25px;
   background-color: #434649;
   width: 100%;
-  // position: absolute;
-  // bottom: 0;
 }
 
 .find {
@@ -164,6 +216,9 @@ html {
   h3 {
     color: white;
     float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   input {
@@ -177,6 +232,10 @@ html {
   width: 683.953px;
   height: 32px;
   margin: 0 auto;
+
+  h3 {
+    margin-right: 8px;
+  }
 }
 
 .submit-button {
@@ -188,23 +247,43 @@ html {
 
 .dictionary {
   font-size: 13px;
-  position: relative;
   display: block;
-  text-align: center;
-  width: 772.048px;
+  width: 796.08px;
   height: 48px;
+  padding: 0 12px;
   margin: 0 auto;
 
   h3 {
-    color: white;
+    color: rgba(255,255,255,0.85);
     float: left;
+    font-size: 13px;
+  }
+
+  ol {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:after {
+      clear: both;
+      content: "";
+      display: block;
+    }
   }
 
   li {
     display: inline-block;
+    float: left;
+    padding-left: 8px;
     a {
       @include link-decoration(#0084bf);
     }
+  }
+
+  #browse-by-country {
+    padding-left: 12px;
+    margin-left: 12px;
+    border-left: 1px solid rgba(255,255,255,0.85);
   }
 }
 
@@ -212,27 +291,68 @@ html {
   width: 1128px;
   height: 162px;
   margin: 0 auto;
+  margin-bottom: 30px;
   min-width: $min-width;
+  border-top: 1px solid rgba(255,255,255,0.15);
 
   a {
     @include link-decoration(rgba(255,255,255,0.85));
+
+    &:visited {
+      color: #827be9;
+    }
   }
+
 
   li {
     display: inline-block;
     border-right: 1px solid rgba(255,255,255,0.55);
+    padding-right: 5px;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+
+  .right-list_item {
+    border-right: none;
   }
 
   .links {
+    box-sizing: border-box;
     width: 50%;
     height: 50%;
+    padding-top: 30px;
     float: left;
+    color: rgba(255,255,255,0.85);
   }
 }
 
 .footer {
+  width: 1128px;
+  height: 53px;
+  margin: 0 auto;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+
+  div {
+    color: rgba(255,255,255,0.85);
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
   li {
     display: inline-block;
+    margin-left: 20px;
+    padding: 10px 0;
+
+    a {
+      @include link-decoration(rgba(255,255,255,0.85));
+    }
   }
 }
 
