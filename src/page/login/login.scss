@@ -1,25 +1,7 @@
 @import "../../scss/_genericReset";
 @import "../../scss/_genericBoxSizing";
 @import "../../scss/_toolsTransform";
-
-$min-width: 1000px;
-$main-header-pd-hor: 16px;
-$logo-height: 60px;
-$login-form-input-width: 200px;
-
-$reg-form-width: 400px;
-$reg-form-input-width: 352px;
-$ref-error-pd: 8px;
-$ref-error-fs: 16px;
-
-$search-form-input-width: 200px;
-
-$logo-ft-height: 40px;
-
-@mixin input-length($width, $height: 32px) {
-  width: $width;
-  height: $height;
-}
+@import "../../scss/_settingsCore";
 
 a {
   text-decoration: none;
@@ -90,7 +72,8 @@ input[type="submit"] {
   float: right;
 
   input {
-    @include input-length($login-form-input-width);
+    width: $login-form-input-width;
+    height: $form-input-hright;
     margin-top: ($logo-height - 32px) / 2;
     margin-right: 10px;
     margin-bottom: ($logo-height - 32px) / 2;
@@ -185,7 +168,8 @@ input[type="submit"] {
   }
 
   input {
-    @include input-length($reg-form-input-width);
+    width: $reg-form-input-width;
+    height: $form-input-hright;
     display: block;
     margin: 0 auto;
   }
@@ -227,7 +211,8 @@ input[type="submit"] {
   margin: 0 auto;
 
   input {
-    @include input-length($search-form-input-width);
+    width: $search-form-input-width;
+    height: $form-input-hright;
     border-radius: 2px;
     margin-right: 10px;
     padding-right: 8px;
