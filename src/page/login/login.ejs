@@ -34,13 +34,13 @@
           </div>
           <div class="reg-blank">
             <label for="lastname">姓</label>
-            <input type="text">
+            <input type="text" id="lastname">
             <label for="firstname">名</label>
-            <input type="text">
+            <input type="text" id="firstname">
             <label for="email">Email</label>
-            <input type="text">
+            <input type="text" id="email">
             <label for="password">密碼 (6 個字元以上)</label>
-            <input type="password">
+            <input type="password" id="password">
             <span class="agreement">
               按下「立即加入」即代表您同意 LinkedIn <a href="#">用戶協議</a>、<a href="#">隱私權政策</a>和 <a href="#">Cookie 政策</a>。
             </span>
@@ -125,10 +125,11 @@
             <li><a href="#">Cookie 政策</a></li>
             <li><a href="#">著作權政策</a></li>
             <li><a href="#">訪客控管</a></li>
-            <li class="lang-selector-container">
-              <a>語言能力</a>
-              <form>
-                <ul class="list-bare lang-selector">
+            <li class="lang-selector-container">      
+              <input type="checkbox" class="lang-selector-state" id="lang-selector-state">
+              <label for="lang-selector-state" class="lang-selector-state-label">語言能力</label>
+              <form class="lang-form" id="lang-form">
+                <ul class="list-bare">
                   <li><button>簡體中文</button></li>
                   <li><button>正體中文</button></li>
                   <li><button>English</button></li>

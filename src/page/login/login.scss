@@ -386,16 +386,33 @@ input[type="submit"] {
 }
 
 .lang-selector-container{
-  a:active .lang-selector {
+  .lang-selector-state {
+    display: none;
+  }
+
+  .lang-selector-state-label {
+    color: rgba(255,255,255,0.85);
+    cursor: pointer;
+  }
+
+  .lang-selector-state-label:hover {
+    text-decoration: underline;
+  }
+
+  .lang-selector-state:checked ~ #lang-form {
     display: block;
   }
 
-  .lang-selector {
+  .lang-form {
+    display: none;
+  }
+
+  .lang-form {
     background-color: #fff;
     padding: 4px;
     min-width: 122px;
     font-size: 13px;
-    display: none;
+    // display: none;
     position: absolute;
     bottom: 40px;
 
