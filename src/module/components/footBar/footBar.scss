@@ -1,0 +1,97 @@
+@import "../../../scss/_settingsCore";
+
+.footer-bar {
+  max-width: $wrapper-width;
+  margin: 0 auto;
+  padding: 8px 0;
+
+  .copyright {
+    color: rgba(255,255,255,0.85);
+    float: left;
+    font-size: 13px;
+    height: $logo-ft-height;
+    margin-right: 24px;
+
+    img {
+      vertical-align: middle;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  &>ul {
+    font-size: 13px;
+    float: left;
+
+    &>li {
+      display: inline-block;
+      margin-right: 24px;
+      line-height: $logo-ft-height;
+
+      a {
+        color: rgba(255,255,255,0.85);
+        display: inline-block;
+        font-size: 13px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.lang-selector-container{
+  .lang-selector-state {
+    display: none;
+  }
+
+  .lang-selector-state-label {
+    color: rgba(255,255,255,0.85);
+    cursor: pointer;
+  }
+
+  .lang-selector-state-label:hover {
+    text-decoration: underline;
+  }
+
+  .lang-selector-state:checked ~ #lang-form {
+    display: block;
+  }
+
+  .lang-form {
+    display: none;
+  }
+
+  .lang-form {
+    background-color: #fff;
+    padding: 4px;
+    min-width: 122px;
+    font-size: 13px;
+    // display: none;
+    position: absolute;
+    bottom: 40px;
+
+    button {
+      border: none;
+      color: #0073b1;
+      display: block;
+      padding: 4px;
+      width: 100%;
+      text-align: left;
+    }
+
+    button:hover {
+      color: #fff;
+      background-color: #0073b1;
+    }
+  }
+}

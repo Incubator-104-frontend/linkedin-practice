@@ -1,0 +1,1 @@
+require('./footBar.scss');

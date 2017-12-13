@@ -1,0 +1,27 @@
+@import "../../../scss/_settingsCore";
+
+.search-form {
+  // width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  input {
+    width: $search-form-input-width;
+    height: $form-input-hright;
+    border-radius: 2px;
+    margin-right: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    background-color: transparent;
+    color: rgba(255,255,255,0.25);
+    width: initial;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}

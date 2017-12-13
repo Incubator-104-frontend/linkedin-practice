@@ -1,4 +1,12 @@
+require('../../module/components/logo/logo');
+require('../../module/components/loginForm/loginForm');
+require('../../module/components/regForm/regForm');
+require('../../module/components/searchForm/searchForm');
+require('../../module/components/searchDict/searchDict');
+require('../../module/components/linkContainer/linkContainer');
+require('../../module/components/footBar/footBar');
 require('./login.scss');
+require('../../scss/main.scss');
 
 $('.reg-form').off('submit').on('submit', () => {
   $('.reg-error').css('margin-top', 0);

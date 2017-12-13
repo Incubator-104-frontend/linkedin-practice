@@ -1,0 +1,1 @@
+require('./searchDict.scss');

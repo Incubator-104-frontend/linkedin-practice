@@ -1,10 +1,12 @@
 ///* ========================================================================
-//   #TRANSFORM
+//   #CENTER
 //   ======================================================================== */
 
-// Generate transform with prefix for supporting different browser.
+// Mixin for centering with prefix supporting different browser.
 
-@mixin transformY($percentage: -50%){
+@mixin center($percentage: -50%){
+  position: relative;
+  top: 50%;
   -webkit-transform: translateY($percentage);
      -moz-transform: translateY($percentage);
       -ms-transform: translateY($percentage);

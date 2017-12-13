@@ -1,0 +1,61 @@
+@import "../../../scss/_settingsCore";
+
+.link-container {
+  max-width: $wrapper-width;
+  margin: 0 auto;
+  padding: 32px 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+
+  .link-left, .link-right
+  {
+    float: left;
+    margin-right: 2%;
+    width: 48%;
+  }
+
+  .title {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 4px;
+  }
+
+  li {
+    border-right: 1px solid rgba(255, 255, 255, 0.55);
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 4px;
+    margin: 2px 4px 0 0; 
+
+    a {
+      color: rgba(255,255,255,0.85);
+      display: block;
+      font-weight: 600;
+      padding: 0 4px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #827be9;
+    }
+  }
+
+  li:last-child {
+    border: 0;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.link-browse, .link-directory {
+  margin-top: 32px;
+}

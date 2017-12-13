@@ -1,0 +1,94 @@
+@import "../../../scss/_settingsCore";
+
+.reg-form {
+  width: $reg-form-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sub-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  text-align: center;
+  padding-right: 32px;
+  padding-left: 32px;
+  position: relative;
+
+  h2 {
+    font-weight: 200;
+    padding-top: 16px;
+  }
+
+  h3 {
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+.reg-error {
+  margin-top: -60px;
+  background-color: #ee1620;
+  color: #fff;
+  padding: 0 16px;
+  transition: all .3s ease; 
+
+  .emsg-container {
+    padding: 16px 0;
+  }
+
+  p {
+    font-size: $ref-error-fs;
+  }
+}
+
+.reg-blank {
+  background-color: #EDF0F3;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  label {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-right: ($reg-form-width - $reg-form-input-width) / 2;
+    margin-left: ($reg-form-width - $reg-form-input-width) / 2
+  }
+
+  label:first-of-type {
+    margin-top: 0;
+  }
+
+  input {
+    width: $reg-form-input-width;
+    height: $form-input-hright;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .agreement {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.55);
+    text-align: center;
+    display: block;
+
+    a {
+      color: rgba(0,0,0,0.55);
+    }
+
+    a:hover {
+      color: #0073b1;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: #0084bf;
+    font-size: 16px;
+    color: #fff;
+  }
+}
