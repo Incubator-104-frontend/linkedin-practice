@@ -1,0 +1,82 @@
+@import "../../../scss/genericMixin";
+
+$border-radius: 2px;
+
+$min-width: 1104px;
+
+
+.register {
+  @include vertical-center();
+  width: 400px;
+  height: 469px;
+  padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(237, 240, 243);
+  border-radius: $border-radius;
+
+  h2, h3 {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(246, 248, 250);
+  }
+
+  .title {
+    padding: 16px 32px 8px 32px;
+    font-size: 26px;
+  }
+
+  .subtitle {
+    padding: 0 8px 16px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  label, input {
+    display: block;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  input {
+    width: 352px;
+    height: 30px;
+  }
+
+  .reg-first_name {
+    padding-top: 24px;
+    padding-bottom: 4px;
+  }
+
+  .reg-label {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+}
+
+.agreement {
+  width: 368px;
+  height: 32px;
+  margin: 8px 16px;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  margin: 0 16px;
+  color: rgba(0, 0, 0, 0.55);
+  margin: 16px 16px 8px 16px;
+
+  a {
+    @include link-decoration(rgba(0, 0, 0, 0.55));
+  }
+}
+
+.reg-submit {
+  display: block;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #0084bf;
+  color: rgba(255,255,255,0.85);
+  font-size: 17px;
+}

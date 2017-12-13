@@ -1,0 +1,33 @@
+@import "../../../scss/genericMixin";
+
+.login-form {
+  width: 226px;
+  height: 32px;
+  padding: 0 10px;
+  margin: 10px 8px 10px 0;
+  font-size: 13px;
+  border: 1px solid #006097;
+}
+
+.login-submit-button {
+  width: 94px;
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 10px;
+  font-size: 17px;
+  color: white;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid white;
+}
+
+.link-forgot-password {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 13px;
+
+  @include link-decoration(#cdcfd2);
+  &:visited {
+    color: #827be9;
+  }
+}

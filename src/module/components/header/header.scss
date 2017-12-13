@@ -1,0 +1,18 @@
+@import "../../../scss/genericMixin";
+
+.header-container {
+  width: 1116px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  @include vertical-center();
+  float: left;
+}
+
+.login {
+  float: right;
+  display: inline-flex;
+}

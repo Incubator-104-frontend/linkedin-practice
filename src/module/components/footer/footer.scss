@@ -1,0 +1,33 @@
+@import "../../../scss/genericMixin";
+
+.footer {
+  width: 1128px;
+  height: 53px;
+  margin: 0 auto;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+
+  div {
+    color: rgba(255,255,255,0.85);
+    float: left;
+    @include vertical-center();
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 0;
+
+    a {
+      @include link-decoration(rgba(255,255,255,0.85));
+    }
+  }
+}
+
+#browse-by-country {
+  @include link-decoration(white);
+}

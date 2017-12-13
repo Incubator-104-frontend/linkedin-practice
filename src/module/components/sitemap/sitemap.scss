@@ -1,0 +1,39 @@
+@import "../../../scss/genericMixin";
+
+.sitemap {
+  width: 1128px;
+  height: 162px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+
+  a {
+    @include link-decoration(rgba(255,255,255,0.85));
+
+    &:visited {
+      color: #827be9;
+    }
+  }
+
+
+  li {
+    display: inline-block;
+    border-right: 1px solid rgba(255,255,255,0.55);
+    padding-right: 5px;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+
+  .right-list_item {
+    border-right: none;
+  }
+
+  .links {
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    padding-top: 30px;
+    float: left;
+    color: rgba(255,255,255,0.85);
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../../scss/genericMixin";
+
+.find {
+
+  h3 {
+    color: white;
+    float: left;
+    @include vertical-center();
+  }
+
+  input {
+    width: 210px;
+    height: 30px;
+  }
+}
+
+.find-colleague-form {
+  width: 683.953px;
+  height: 32px;
+  margin: 0 auto;
+
+  h3 {
+    margin-right: 8px;
+  }
+}
+
+.submit-button {
+  width: 53.875px !important;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+}

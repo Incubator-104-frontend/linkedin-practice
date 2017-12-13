@@ -8,142 +8,18 @@
   <body>
     <div class="global">
       <div class="header">
-        <div class="header-container">
-          <div class="logo">
-            <img src="__static__/img/logo.png">
-          </div>
-          <div class="login">
-            <form>
-              <input class="login-email" type="text" placeholder="Email">
-              <input class="login-password" type="text" placeholder="Password">
-              <input class="login-submit-button" type="submit" value="Sign in">
-              <a class="link-forgot-password" href="https://www.linkedin.com/uas/request-password-reset?trk=uno-reg-guest-home-forgot-password">Forgot password?</a>
-            </form>
-          </div>
-        </div>
+        <%= require('../../module/components/header/header.ejs')() %>
       </div>
       <div class="main">
-        <form class="register">
-          <h2 class="title">Be great at what you do</h2>
-          <h3 class="subtitle">Get started - it's free.</h3>
-          <label class="reg-first_name">First name</label>
-          <input type="text">
-          <label class="reg-label">Last name</label>
-          <input type="text">
-          <label class="reg-label">Email</label>
-          <input type="text">
-          <label class="reg-label">Password (6 or more characters)</label>
-          <input type="text">
-          <span class="agreement">By clicking Join now, you agree to the LinkedIn <a href="https://www.linkedin.com/legal/user-agreement">User Agreement</a>, <a href="https://www.linkedin.com/legal/privacy-policy">Privacy Policy</a>, and <a href="https://www.linkedin.com/legal/cookie-policy">Cookie Policy</a></span>
-          <input class="reg-submit" type="submit" value="Join now">
-        </form>
+        <%= require('../../module/components/registerForm/registerForm.ejs')() %>
       </div>
       <div class="bottom">
         <div class="find">
-          <div class="find-colleague">
-            <form class="find-colleague-form">
-              <h3>Find a colleague</h3>
-              <input type="text" placeholder="First name">
-              <input type="text" placeholder="Last name">
-              <input class="submit-button" type="submit" value="Search">
-            </form>
-          </div>
-          <div class="dictionary">
-            <h3>LinkedIn member directory: </h3>
-            <ol>
-              <li><a href="https://www.linkedin.com/directory/people-a/">A</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-b/">B</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-c/">C</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-d/">D</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-e/">E</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-f/">F</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-g/">G</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-h/">H</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-i/">I</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-j/">J</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-k/">K</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-l/">L</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-m/">M</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-n/">N</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-o/">O</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-p/">P</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-q/">Q</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-r/">R</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-s/">S</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-t/">T</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-u/">U</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-v/">V</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-w/">W</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-x/">X</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-y/">Y</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-z/">Z</a></li>
-              <li><a href="https://www.linkedin.com/directory/people-1/">More</a></li>
-              <li><a id="browse-by-country" href="https://www.linkedin.com/directory/country_listing/?trk=uno-reg-guest-home-country">Browse by country</a>
-            </ol>
-          </div>
+          <%= require('../../module/components/findColleague/findColleague.ejs')() %>
+          <%= require('../../module/components/dictionary/dictionary.ejs')() %>
         </div>
-        <div class="sitemap">
-          <div class="links">
-            <h3>General</h3>
-            <ul>
-              <li><a href="https://www.linkedin.com/start/join?trk=uno-reg-guest-home-join">Sign Up</a></li>
-              <li><a href="https://www.linkedin.com/help/linkedin?trk=uno-reg-guest-home-help-center&lang=en">Help Center</a></li>
-              <li><a href="https://press.linkedin.com/about-linkedin?trk=uno-reg-guest-home-about">About</a></li>
-              <li><a href="https://press.linkedin.com/">Press</a></li>
-              <li><a href="https://blog.linkedin.com/">Blog</a></li>
-              <li><a href="https://www.linkedin.com/company/linkedin/careers?trk=uno-reg-guest-home-careers">Careers</a></li>
-              <li class="right-list_item"><a href="https://developer.linkedin.com/">Developers</a></li>
-            </ul>
-          </div>
-          <div class="links">
-            <h3>Business Solutions</h3>
-            <ul>
-              <li><a href="https://business.linkedin.com/talent-solutions?src=li-footer&utm_source=linkedin&utm_medium=footer">Talent</a></li>
-              <li><a href="https://business.linkedin.com/marketing-solutions?src=li-footer&utm_source=linkedin&utm_medium=footer">Marketing</a></li>
-              <li><a href="https://business.linkedin.com/sales-solutions?src=li-footer&utm_source=linkedin&utm_medium=footer">Sales</a></li>
-              <li class="right-list_item"><a href="https://learning.linkedin.com/?src=li-footer">Learning</a></li>
-            </ul>
-          </div>
-          <div class="links">
-            <h3>Browse LinkedIn</h3>
-            <ul>
-              <li><a href="https://www.linkedin.com/pulse/discover?trk=uno-reg-guest-home-influencers">Influencers</a></li>
-              <li><a href="https://www.linkedin.com/jobs?trk=uno-reg-guest-home-jobs">Jobs</a></li>
-              <li><a href="https://mobile.linkedin.com/?trk=uno-reg-guest-home-mobile">Mobile</a></li>
-              <li><a href="https://www.linkedin.com/profinder?trk=uno-reg-guest-home-profinder">ProFinder</a></li>
-              <li class="right-list_item"><a href="https://www.linkedin.com/learning/?trk=uno-reg-guest-home-learning">Learning</a></li>
-            </ul>
-          </div>
-          <div class="links">
-            <h3>Directories</h3>
-            <ul>
-              <li><a href="https://www.linkedin.com/directory/people-a/?trk=uno-reg-guest-home-people-directory">Members</a></li>
-              <li><a href="https://www.linkedin.com/jobs/directory/?trk=uno-reg-guest-home-jobs-directory">Jobs</a></li>
-              <li><a href="https://www.linkedin.com/directory/pulse/?trk=uno-reg-guest-home-pulse">Pulse</a></li>
-              <li><a href="https://www.linkedin.com/directory/topics/?trk=uno-reg-guest-home-topics">Topics</a></li>
-              <li><a href="https://www.linkedin.com/directory/companies/?trk=uno-reg-guest-home-companies-directory">Companies</a></li>
-              <li><a href="https://www.linkedin.com/directory/salaries/?trk=uno-reg-guest-home-salaries-directory">Salaries</a></li>
-              <li><a href="https://www.linkedin.com/directory/universities/?trk=uno-reg-guest-home-universities">Universities</a></li>
-              <li><a href="https://www.linkedin.com/directory/title/?trk=uno-reg-guest-home-title-directory">Titles</a></li>
-              <li><a href="https://www.linkedin.com/profiles/directory/name-a/?trk=uno-reg-guest-home-similarNames-directory">People</a></li>
-              <li class="right-list_item"><a href="https://www.linkedin.com/directory/topjobs/?trk=uno-reg-guest-home-topJobs-directory">Top Jobs</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer">
-          <div class="copyright">
-            <img src="__static__/img/copyright.png">© 2017
-          </div>
-          <ul>
-            <li><a href="https://www.linkedin.com/legal/user-agreement?trk=uno-reg-guest-home-user-agreement">User Agreement</a></li>
-            <li><a href="https://www.linkedin.com/legal/privacy-policy?trk=uno-reg-guest-home-privacy-policy">Privacy Policy</a></li>
-            <li><a href="https://www.linkedin.com/help/linkedin/answer/34593?lang=en&trk=uno-reg-guest-home-community-guidelines">Community Guidelines</a></li>
-            <li><a href="https://www.linkedin.com/legal/cookie-policy?trk=uno-reg-guest-home-cookie-policy">Cookie Policy</a></li>
-            <li><a href="https://www.linkedin.com/legal/copyright-policy?trk=uno-reg-guest-home-copyright-policy">Copyright Policy</a></li>
-            <li><a href="https://www.linkedin.com/psettings/guest-controls?trk=uno-reg-guest-home-guest-controls">Guest Controls</a></li>
-            <li>Language</a></li>
-          </ul>
-        </div>
+        <%= require('../../module/components/sitemap/sitemap.ejs')() %>
+        <%= require('../../module/components/footer/footer.ejs')() %>
       </div>
     </div>
   </body>
