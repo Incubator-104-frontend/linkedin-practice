@@ -50,6 +50,8 @@
 }
 
 .lang-selector-container{
+  position: relative;
+
   .lang-selector-state {
     display: none;
   }
@@ -76,11 +78,11 @@
     padding: 4px;
     min-width: 122px;
     font-size: 13px;
-    // display: none;
     position: absolute;
     bottom: 40px;
 
     button {
+      background-color: transparent;
       border: none;
       color: #0073b1;
       display: block;
