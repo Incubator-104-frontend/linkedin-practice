@@ -26,19 +26,11 @@ input[type="submit"] {
   background-color: #283e4a;
   height: 6%;
   min-height: $header-min-height;
-  // padding-right: $main-header-pd-hor;
-  // padding-left: $main-header-pd-hor;
-  // min-width: $wrapper-width;
 }
 
 .global-container {
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: flex;
   height: 100vh;
   min-width: $wrapper-width;
-  // flex-direction: column;
-  // background-color: #434649;
 }
 
 .inner-container {
@@ -51,15 +43,13 @@ input[type="submit"] {
 .main-content {
   background-image: url("/__static__/img/people.jpeg");
   background-size: cover;
-  height: 57%;
+  height: calc(94% - 360px);
   min-height: 528px;
 }
 
 .main-footer {
-  // position: relative;
   background-color: #434649;
-  min-height: 37%;
-  // min-height: 334.5px;
+  min-height: 360px;
   padding-top: 25px;
 }
 
