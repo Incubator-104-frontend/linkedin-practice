@@ -1,6 +1,8 @@
 @import "../../../scss/_settingsCore";
 
 .link-container {
+  font-size: 12px;
+  line-height: 20px;
   max-width: $wrapper-width;
   margin: 0 auto;
   padding: 32px 0;
@@ -23,7 +25,6 @@
   li {
     border-right: 1px solid rgba(255, 255, 255, 0.55);
     display: inline-block;
-    font-size: 12px;
     padding-right: 4px;
     margin: 2px 4px 0 0; 
 
